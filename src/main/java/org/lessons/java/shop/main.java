@@ -5,20 +5,15 @@ public class main {
 	public static void main(String[] args) {
 		
 	
-		Prodotto sedia = new Prodotto();
-		sedia.opzioniStringa("poltrona","bellissima poltrona massaggiatrice");
-		sedia.opzioniNum(100.90, 10.19);
-		sedia.codiceR();
+		Prodotto poltrona = new Prodotto("poltrona massaggiatrice","super poltrona massaggiatrice",1800);
+		poltrona.info();
 		
-		sedia.info();
 		
-		Prodotto tavolo = new Prodotto();
-		tavolo.opzioniStringa("tavolo di oro", "tavolo di oro bianco fabricato nelle montagne orientali");
-		tavolo.opzioniNum(5000, 80);
-		tavolo.codiceR();
-		
+		Prodotto tavolo = new Prodotto("tavolo di oro bianco", "tavolo fabbricato da gnomi nelle valli nordiche",6700);
 		tavolo.info();
 		
+		Prodotto iphone = new Prodotto("ipone x", "150gb, camera 30mpx, resistente all'acqua. ", 800);
+		iphone.info();
 	}
 
 	}
